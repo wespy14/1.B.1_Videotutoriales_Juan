@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas 2</title>
+    <style>
+        table,th,td{
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tablas con formateo desde head</h1>
+    <table>
+        <tr><th>Nombre</th><th>Apellidos</th><th>Edad</th></tr>
+        <tr><td>Julián</td><td>Machado Cuevas</td><td>81</td></tr>
+        <tr><td>Felicia</td><td>Martín Dominguez</td><td>50</td></tr>
+    </table>
+    <a href="Index.html">Tabla con formateo desde tabla</a>
+    <h1>Caption y Colspan</h1>
+    <caption>Teléfonos</caption>
+    <table>
+        <tr>
+            <th>Nombre</th>
+            <th colspan="2">Teléfono</th>
+        </tr>
+        <tr>
+            <td>Stephen King</td>
+            <td>666 877 996</td>
+            <td>666 888 777</td>
+        </tr>
+    </table>
+    <h1>Rowspan</h1>
+    <table>
+        <tr>
+            <th>Nombre:</th>
+            <td>Alonso</td>
+        </tr>
+        <tr>
+            <th rowspan="2">Teléfono:</th>
+            <td>899777777</td>
+        </tr>
+        <tr>
+            <td>555444222</td>
+        </tr>
+    </table>
+    <h1>Propiedades por columnas</h1>
+    <table>
+        <colgroup>
+            <col style="background-color: yellow;">
+            <col style="background-color: aqua;">
+            <col style="background-color: red;">
+        </colgroup>
+        <tr>
+            <th>ISBN</th>
+            <th>Título</th>
+            <th>Precio</th>
+        </tr>
+        <tr>
+            <td>12345697</td>
+            <td>Romeo y Julieta</td>
+            <td>7€</td>
+        </tr>
+        <tr>
+            <td>987654321</td>
+            <td>Los asesinatos de la Calle Morgue</td>
+            <td>10€</td>
+        </tr>
+        <tr>
+            <td>379146825</td>
+            <td>El Señor de los Anillos</td>
+            <td>20€</td>
+        </tr>
+    </table>
+</body>
+</html>
