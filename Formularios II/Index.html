@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Tipos de inputs</h1>
+    <form action="procesa.php" method="post">
+    <fieldset>
+    <legend>Datos personales</legend>
+    <p>
+        <label for="nombre">Nombre:</label>
+        <input type="text" name="Nombre" id="nombre"
+         maxlength="6">
+    </p>
+    <p>
+        <label for="pass">Contraseña:</label>
+        <input type="password" name="pass" id="pass" 
+        maxlength="8">
+    </p>
+    <p>
+        <label for="hombre">Hombre</label>
+        <input type="radio" value="H" checked id="hombre"
+        name="genero">
+        <label for="mujer">Mujer</label>
+        <input type="radio" value="M" id="mujer"
+        name="genero">
+    </p>
+    <p>
+        <label for="fumador">Fumador</label>
+        <input type="checkbox" name="fumador" 
+        id="fumador">
+    </p>
+    <p>
+        <label for="provincia">Provincia:</label>
+        <select name="provincia" id="provincia">
+            <option value="CR">Ciudad Real</option>
+            <option value="To">Toledo</option>
+            <option value="Gu" selected>Guadalajara</option>
+            <option value="Al">Albacete</option>
+            <option value="Cu">Cuenca</option>
+        </select>
+    </p>
+    <p>
+        <Label for="Observaciones">Observaciones:</Label>
+        <textarea name="Observaciones" id="Observaciones"
+         cols="30" rows="5">
+         Escriba algo...
+        </textarea>
+    </p>
+    <p>
+        <label for="Color">Color:</label>
+        <input type="color" name="Color" id="Color">
+    </p>
+    <p>
+        <label for="Birthdate">Fecha de Nacimiento:</label>
+        <input type="date" name="Birthdate" id="Birthdate">
+    </p>
+    <p>
+        <Label for="Edad">Edad:</Label>
+        <input type="number" name="Edad" id="Edad" 
+        min="0" max="100">
+    </p>
+    <p>
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email">
+    </p>
+    <p>
+        <label for="CV">Curriculum Vitae:</label>
+        <input type="file" name="CV" id="CV">
+    </p>
+    </fieldset>
+    <p>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Reiniciar">
+    </p>
+    </form>
+</body>
+</html>
