@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        label{
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formularios</h1>
+    <h2>Formulario con method="get"</h2>
+    <form action="procesa.php" method="get">
+        <fieldset>
+            <legend>Datos personales</legend>
+            <p>
+            <label for="nombre">Nombre:</label>
+            <input id="nombre" type="text" name="apellidos">
+            </p>
+            <p>
+            <label for="apellidos">Apellidos:</label>
+            <input id="apellidos" type="text" name="apellidos">
+            </p>
+        </fieldset>
+        <input type="submit" value="Enviar">
+    </form>
+    <h2>Formulario con method="post"</h2>
+    <form action="procesa.php" method="post">
+        <fieldset>
+            <legend>Datos personales</legend>
+            <p>
+            <label for="Nom">Nombre:</label>
+            <input id="Nom" type="text" name="nombre">
+            </p>
+            <p>
+            <label for="Apel">Apellidos:</label>
+            <input id="Apel" type="text" name="apellidos">
+            </p>
+        </fieldset>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
